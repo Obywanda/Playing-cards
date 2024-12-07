@@ -1,12 +1,4 @@
-<app-search-bar 
-(submit)="increaseCount()"
-[(search)]="search"
-
-/>
-Search: {{search}} <br/>
-Click count : {{count}}
+<button (click)="toggleMonster()">Toggle Monster</button>
 <div id="card-list">
-    <app-playing-card />
-<!-- Utilisation du décorateur @Input dans le composant -->
-    <app-playing-card [monster]="monster1"/>
+    <app-playing-card [monster]="monsters[selectedMonsterIndex]" />
 </div>

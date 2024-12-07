@@ -12,12 +12,8 @@ export class PlayingCardComponent {
 
   
   //Le décorateur @Input() permet d'insceret une valeur en entrée
-  @Input({
-    //parametre input
-    //required: true ; 
-    //alias:'my-monster' ;
-    //transform: (value: Monster) => {value.hp = value.hp /2; return value}
-  }
-  ) monster: Monster = new Monster()
+  @Input() monster = new Monster();
+  monsterTypeIcon: string ="/img/electric.png";
+  backgroundColor: string = "rgb(255, 255, 104)";
 
  }
