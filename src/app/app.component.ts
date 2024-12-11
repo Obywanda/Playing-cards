@@ -1,3 +1,4 @@
+import { MonsterType } from './utils/monster.utils';
 import { Component } from '@angular/core';
 import { PlayingCardComponent } from "./components/playing-card/playing-card.component";
 import { Monster } from './models/monster.model';
@@ -17,6 +18,8 @@ export class AppComponent {
   monsters!: Monster[];
   count: number = 0;
   search = "";
+
+  selectedMonsterIndex = 0;
 
   selectedMonsterIndex = 0;
 

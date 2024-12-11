@@ -1,3 +1,4 @@
+
 import { MonsterType } from "../utils/monster.utils";
 
 export class Monster {
@@ -7,6 +8,7 @@ export class Monster {
     type: MonsterType = MonsterType.ELECTRIC;
     hp: number = 40;
     figureCaption: string = "N°001 Monster";
+
     attackName: string = "Geo Impact";
     attackStrenght: number = 60;
     attacksDescription: string = "This is a long description of a monster attack. Probably something to do with electricity"
