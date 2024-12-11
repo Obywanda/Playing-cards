@@ -10,12 +10,18 @@ import { FormsModule } from '@angular/forms';
 })
 export class SearchBarComponent {
 
-  search = model<string>('Initial'); 
+  //  Utilisation de la fonction model 
+   search = model<string>('Initial'); 
+
+/** @Output Permet à l'enfant d'envoyer des données ou des événements au parent.:
+ *  @Output() searchButtonClick = new EventEmitter()
+ **/
+
+  //signal output disponible depuis la version 17.3 d'Angular :
   searchButtonClick = output({alias: 'submit'});
 
   searchClick(){
     this.searchButtonClick.emit();
-    
   }
   
 }
